@@ -62,6 +62,7 @@ class TestClassC
 {
     public static void Main()
     {
+        //why why why
         MessageQueue myQueue = new MessageQueue(".\\myQueue");
 
         // Set the formatter to indicate body contains an Order.
