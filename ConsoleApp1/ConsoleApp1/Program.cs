@@ -31,6 +31,15 @@ namespace System.Messaging{
 
     public class BinaryMessageFormatter : ICloneable, System.Messaging.IMessageFormatter
     {
+        public BinaryMessageFormatter()
+        {
+        }
+
+        public object GetTest()
+        {
+            return null;
+        }
+
         public object Clone()
         {
             throw new NotImplementedException();
@@ -57,6 +66,7 @@ class TestClassC
 
         // Set the formatter to indicate body contains an Order.
         myQueue.Formatter = new BinaryMessageFormatter();
+        var a = new BinaryMessageFormatter().GetTest();
 
         // Receive and format the message. 
         System.Messaging.Message myMessage = myQueue.Receive();
