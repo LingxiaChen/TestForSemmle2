@@ -68,7 +68,7 @@ class TestClassC
         myQueue.Formatter = new BinaryMessageFormatter();
         var a = new BinaryMessageFormatter().GetTest();
 
-        //test case 2
+        //test case 
         var b = new BinaryMessageFormatter();
         var c = b.GetTest();
 
