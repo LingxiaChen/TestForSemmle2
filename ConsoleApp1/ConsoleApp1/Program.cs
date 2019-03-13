@@ -64,5 +64,10 @@ class TestClassC
 
         // This will be saved in the \bin\debug or \bin\retail folder.
         myImage.Save("ReceivedImage.bmp");
+
+        byte[] buffer = new byte[] { 1, 2, 3 };
+        MemoryStream memStream = new MemoryStream(buffer);
+        BinaryFormatter bf = new BinaryFormatter(null, new StreamingContext(StreamingContextStates.All));
+        DataTable dt = (DataTable)bf.Deserialize(memStream);
     }
 }
