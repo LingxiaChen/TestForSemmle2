@@ -67,6 +67,8 @@ class TestClassC
         // Set the formatter to indicate body contains an Order.
         myQueue.Formatter = new BinaryMessageFormatter();
         var a = new BinaryMessageFormatter().GetTest();
+
+        //test case 2
         var b = new BinaryMessageFormatter();
         var c = b.GetTest();
 
